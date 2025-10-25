@@ -1,0 +1,28 @@
+{
+  "name": "tabnews",
+  "version": "1.0.0",
+  "description": "Implementação do tabnews do curso.dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorKogawa/tabnews.git"
+  },
+  "keywords": [
+    "tabnews"
+  ],
+  "author": "vitorKogawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorKogawa/tabnews/issues"
+  },
+  "homepage": "https://github.com/vitorKogawa/tabnews#readme",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
