@@ -1,5 +1,9 @@
-function Home(){
-    return <h1>Teste</h1>
+function Home() {
+  return <AnyText text="Bem-vindo ao clone do site TabNews!" />;
 }
 
-export default Home
+function AnyText({ text }) {
+  return <h1>{text}</h1>;
+}
+
+export default Home;
