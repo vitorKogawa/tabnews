@@ -1,5 +1,7 @@
 function Home() {
-  return <AnyText text="[Ambiente de Desenvolvimento] Bem-vindo ao clone do site TabNews!" />;
+  return (
+    <AnyText text="[Ambiente de Desenvolvimento] Bem-vindo ao clone do site TabNews!" />
+  );
 }
 
 function AnyText({ text }) {
