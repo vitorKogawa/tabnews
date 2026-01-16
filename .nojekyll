@@ -1,3 +1,0 @@
-"scripts": {
-  "deploy": "next build && touch out/.nojekyll && gh-pages -d out"
-},
