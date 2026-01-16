@@ -4,8 +4,4 @@ function Home() {
   );
 }
 
-function AnyText({ text }) {
-  return <h1>{text}</h1>;
-}
-
 export default Home;
