@@ -1,5 +1,5 @@
-const { Client } = require("pg");
-require('dotenv').config({ path: `${__dirname}/../.env.development` })
+const { Client } = require("pg")
+require('dotenv').config({ path: `${__dirname}/../.env.development` });
 
 async function query(queryObject) {
   try {
@@ -19,4 +19,4 @@ async function query(queryObject) {
   }
 }
 
-module.exports = { query : query };
+module.exports = { query }
