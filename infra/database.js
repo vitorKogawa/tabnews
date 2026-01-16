@@ -1,13 +1,14 @@
 const { Client } = require("pg");
+require('dotenv').config({ path: `${__dirname}/../.env` })
 
 async function query(queryObject) {
   try {
     const client = new Client({
-      host: "localhost",
-      user: "postgres",
-      password: "local_password",
-      port: 5432,
-      database: "postgres",
+      host: process.env.POSTGRES_HOST,
+      user: process.env.POSTGRES_USER,
+      password: `${process.env.POSTGRES_PASSWORD}`,
+      port: process.env.POSTGRES_PORT,
+      database: process.env.POSTGRES_DATABASE,
     });
     await client.connect();
     const result = await client.query(queryObject);
@@ -18,4 +19,4 @@ async function query(queryObject) {
   }
 }
 
-module.exports = { query };
+module.exports = { query : query };
