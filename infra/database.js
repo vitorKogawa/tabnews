@@ -1,5 +1,5 @@
 const { Client } = require("pg");
-require('dotenv').config({ path: `${__dirname}/../.env` })
+require('dotenv').config({ path: `${__dirname}/../.env.development` })
 
 async function query(queryObject) {
   try {
