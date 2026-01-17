@@ -19,11 +19,6 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "^@/(.*)$": "<rootDir>/$1"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vitorKogawa/tabnews.git"
