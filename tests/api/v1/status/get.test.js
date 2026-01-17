@@ -39,9 +39,3 @@ test("GET to /api/v1/status return 200", async () => {
     process.env.POSTGRES_VERSION,
   );
 });
-
-// test("Database connection must be online", async () => {
-//   const resultExpect = 4;
-//   const result = await query("SELECT 2 + 2 as sum;");
-//   expect(result.rows[0].sum).toBe(resultExpect);
-// });
