@@ -1,4 +1,4 @@
-const { query } = require("@/infra/database");
+require('dotenv').config({ path: `${__dirname}/../../../../.env.development` })
 
 test("GET to /api/v1/status return 200", async () => {
   /**
@@ -18,7 +18,7 @@ test("GET to /api/v1/status return 200", async () => {
    * Teste para validar a quantidade máxima de conexões disponíveis para a base de dados
    */
   const responseDatabaseStatus = responseBody.database;
-
+  
   expect(responseDatabaseStatus).toBeDefined();
   expect(typeof responseDatabaseStatus.max_connections).toBe("number");
   expect(responseDatabaseStatus.max_connections).toBe(
