@@ -1,7 +1,5 @@
 function Home() {
-  return (
-    <AnyText text="[Ambiente de Desenvolvimento] Bem-vindo ao clone do site TabNews!" />
-  );
+  return <h1>Clone do Tabnews!!!</h1>
 }
 
 export default Home;
